@@ -1,9 +1,20 @@
 # NowcoderCommunity
 
 #### Description
-视频课：牛客高级项目课_牛客网  https://www.nowcoder.com/courses/semester/senior
-项目：牛客网讨论区简易版。Java后端项目。
-技术架构 ：
+Video class: Nowcoder Advanced Project Course：https://www.nowcoder.com/courses/semester/senior
+
+Project: The simplified version of nowcoder.com discussion area. Java back-end project.
+
+
+Technology Architecture :
+
+• Spring Boot 
+
+• Spring、Spring MVC、MyBatis 
+
+• Redis、Kafka、Elasticsearch
+
+• Spring Security、Spring Actuator
 
 
 #### Software Architecture

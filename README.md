@@ -1,7 +1,7 @@
 # NowcoderCommunity
 
 #### 介绍
-视频课：牛客高级项目课_牛客网  https://www.nowcoder.com/courses/semester/senior
+视频课：牛客高级项目课_牛客网：https://www.nowcoder.com/courses/semester/senior
 
 项目：牛客网讨论区简易版。Java后端项目。
 
