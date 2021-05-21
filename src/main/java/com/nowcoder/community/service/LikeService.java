@@ -15,8 +15,8 @@ public class LikeService {
     private RedisTemplate redisTemplate;
 
     // 点赞
-    public void like(int userId, int entityType, int entityId, int entityUserId) {
-        redisTemplate.execute(new SessionCallback() {
+    public void like(int userId, int entityType, int entityId, int entityUserId) {//userId：点赞的人。entityUserId：被点赞的人。
+        redisTemplate.execute(new SessionCallback() {//Redis事务
             @Override
             public Object execute(RedisOperations operations) throws DataAccessException {
                 String entityLikeKey = RedisKeyUtil.getEntityLikeKey(entityType, entityId);

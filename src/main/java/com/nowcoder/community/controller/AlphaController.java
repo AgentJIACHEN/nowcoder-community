@@ -35,7 +35,7 @@ public class AlphaController {
         return alphaService.find();
     }
 
-    @RequestMapping("/http")
+    @RequestMapping("/http")//没有“method = RequestMethod.GET”，所以get请求和post请求都可以访问。
     public void http(HttpServletRequest request, HttpServletResponse response) {
         // 获取请求数据
         System.out.println(request.getMethod());
@@ -64,7 +64,8 @@ public class AlphaController {
     // /students?current=1&limit=20
     @RequestMapping(path = "/students", method = RequestMethod.GET)
     @ResponseBody
-    public String getStudents(
+    public String getStudents(//“required = false”表示可以不传这个参数进来
+            //表示传进来的name为“current”的参数，会被复制给后面的int current。
             @RequestParam(name = "current", required = false, defaultValue = "1") int current,
             @RequestParam(name = "limit", required = false, defaultValue = "10") int limit) {
         System.out.println(current);
@@ -101,14 +102,15 @@ public class AlphaController {
     }
 
     @RequestMapping(path = "/school", method = RequestMethod.GET)
-    public String getSchool(Model model) {
+    public String getSchool(Model model) {//DispatcherServlet会给你把model传递进来
         model.addAttribute("name", "北京大学");
         model.addAttribute("age", 80);
         return "/demo/view";
     }
 
     // 响应JSON数据(异步请求)
-    // Java对象 -> JSON字符串 -> JS对象
+    // Java对象 -> JSON字符串 -> JS对象    //Java对象无法直接和JS对象互相转换。但我们可以通过JSON字符串来实现两者互相转换。
+    // Java语言和其他语言的对象互相转换时，也是用JSON实现。
 
     @RequestMapping(path = "/emp", method = RequestMethod.GET)
     @ResponseBody

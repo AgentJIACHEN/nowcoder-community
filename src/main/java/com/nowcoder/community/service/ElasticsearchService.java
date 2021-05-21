@@ -25,13 +25,7 @@ import java.util.List;
 
 @Service
 public class ElasticsearchService {
-    /*
-        @Autowired
-        private DiscussPostRepository discussRepository;
 
-        @Autowired
-        private ElasticsearchTemplate elasticTemplate;
-    */
     @Autowired
     private DiscussPostMapper discussMapper;
 
@@ -42,6 +36,7 @@ public class ElasticsearchService {
     @Autowired
     private RestHighLevelClient restHighLevelClient;
 
+
     public void saveDiscussPost(DiscussPost post) {
         discussRepository.save(post);
     }
@@ -50,8 +45,8 @@ public class ElasticsearchService {
         discussRepository.deleteById(id);
     }
 
-/*
-    public Page<DiscussPost> searchDiscussPost(String keyword, int current, int limit) {//current是当前页，current从0开始
+    /*
+    public Page<DiscussPost> searchDiscussPost(String keyword, int current, int limit) {
         SearchQuery searchQuery = new NativeSearchQueryBuilder()
                 .withQuery(QueryBuilders.multiMatchQuery(keyword, "title", "content"))
                 .withSort(SortBuilders.fieldSort("type").order(SortOrder.DESC))
@@ -59,7 +54,7 @@ public class ElasticsearchService {
                 .withSort(SortBuilders.fieldSort("createTime").order(SortOrder.DESC))
                 .withPageable(PageRequest.of(current, limit))
                 .withHighlightFields(
-                        new HighlightBuilder.Field("title").preTags("<em>").postTags("</em>"),//global.css里定义了<em>标签显示为红色
+                        new HighlightBuilder.Field("title").preTags("<em>").postTags("</em>"),
                         new HighlightBuilder.Field("content").preTags("<em>").postTags("</em>")
                 ).build();
 
@@ -67,7 +62,7 @@ public class ElasticsearchService {
             @Override
             public <T> AggregatedPage<T> mapResults(SearchResponse response, Class<T> aClass, Pageable pageable) {
                 SearchHits hits = response.getHits();
-                if (hits.getTotalHits().value <= 0) {
+                if (hits.getTotalHits() <= 0) {
                     return null;
                 }
 
@@ -111,7 +106,7 @@ public class ElasticsearchService {
                 }
 
                 return new AggregatedPageImpl(list, pageable,
-                        hits.getTotalHits().value, response.getAggregations(), response.getScrollId(), hits.getMaxScore());
+                        hits.getTotalHits(), response.getAggregations(), response.getScrollId(), hits.getMaxScore());
             }
         });
     }
@@ -158,7 +153,4 @@ public class ElasticsearchService {
         }
         return list;
     }
-
-
-
 }

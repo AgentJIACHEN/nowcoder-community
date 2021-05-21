@@ -5,12 +5,17 @@ import com.alibaba.fastjson.JSONObject;
 import com.nowcoder.community.dao.DiscussPostMapper;
 import com.nowcoder.community.dao.elasticsearch.DiscussPostRepository;
 import com.nowcoder.community.entity.DiscussPost;
+import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
+import org.elasticsearch.action.support.master.AcknowledgedResponse;
 import org.elasticsearch.action.update.UpdateRequest;
 import org.elasticsearch.action.update.UpdateResponse;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
+import org.elasticsearch.client.indices.CreateIndexRequest;
+import org.elasticsearch.client.indices.CreateIndexResponse;
+import org.elasticsearch.client.indices.GetIndexRequest;
 import org.elasticsearch.common.xcontent.XContentType;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
@@ -22,6 +27,7 @@ import org.elasticsearch.search.sort.SortOrder;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 
@@ -43,10 +49,13 @@ public class ElasticsearchTests {
     @Autowired
     private RestHighLevelClient restHighLevelClient;
 
+    @Value("${elasticsearch.indices}")
+    String esIndices;
+
     //判断某id的文档（数据库中的行）是否存在
     @Test
-    public void testExist(){
-        boolean exists =discussRepository.existsById(109);
+    public void testExist() {
+        boolean exists = discussRepository.existsById(109);
         System.out.println(exists);
     }
 
@@ -61,15 +70,15 @@ public class ElasticsearchTests {
     @Test
     public void testInsertList() {
         //把id为101的用户发的前100条帖子（List<DiscussPost>）存入es的discusspost索引（es的索引相当于数据库的表）
-        discussRepository.saveAll(discussMapper.selectDiscussPosts(101, 0, 100));
-        discussRepository.saveAll(discussMapper.selectDiscussPosts(102, 0, 100));
-        discussRepository.saveAll(discussMapper.selectDiscussPosts(103, 0, 100));
-        discussRepository.saveAll(discussMapper.selectDiscussPosts(111, 0, 100));
-        discussRepository.saveAll(discussMapper.selectDiscussPosts(112, 0, 100));
-        discussRepository.saveAll(discussMapper.selectDiscussPosts(131, 0, 100));
-        discussRepository.saveAll(discussMapper.selectDiscussPosts(132, 0, 100));
-        discussRepository.saveAll(discussMapper.selectDiscussPosts(133, 0, 100));
-        discussRepository.saveAll(discussMapper.selectDiscussPosts(134, 0, 100));
+        discussRepository.saveAll(discussMapper.selectDiscussPosts(101, 0, 100, 0));
+        discussRepository.saveAll(discussMapper.selectDiscussPosts(102, 0, 100, 0));
+        discussRepository.saveAll(discussMapper.selectDiscussPosts(103, 0, 100, 0));
+        discussRepository.saveAll(discussMapper.selectDiscussPosts(111, 0, 100, 0));
+        discussRepository.saveAll(discussMapper.selectDiscussPosts(112, 0, 100, 0));
+        discussRepository.saveAll(discussMapper.selectDiscussPosts(131, 0, 100, 0));
+        discussRepository.saveAll(discussMapper.selectDiscussPosts(132, 0, 100, 0));
+        discussRepository.saveAll(discussMapper.selectDiscussPosts(133, 0, 100, 0));
+        discussRepository.saveAll(discussMapper.selectDiscussPosts(134, 0, 100, 0));
     }
 
     //通过覆盖原内容，来修改一条数据
@@ -84,7 +93,7 @@ public class ElasticsearchTests {
     //修改一条数据
     //覆盖es里的原内容 与 修改es中的内容 的区别：String类型的title被设为null，覆盖的话，会把es里的该对象的title也设为null；UpdateRequest，修改后该对象的title不变
     @Test
-    void testUpdateDocument() throws IOException{
+    void testUpdateDocument() throws IOException {
         UpdateRequest request = new UpdateRequest("discusspost", "109");
         request.timeout("1s");
         DiscussPost post = discussMapper.selectDiscussPostById(230);
@@ -98,8 +107,8 @@ public class ElasticsearchTests {
     //删除一条数据和删除所有数据
     @Test
     public void testDelete() {
-        discussRepository.deleteById(109);//删除一条数据
-        //discussRepository.deleteAll();//删除所有数据
+        //discussRepository.deleteById(109);//删除一条数据
+        discussRepository.deleteAll();//删除所有数据
     }
 
     //不带高亮的查询
@@ -135,7 +144,7 @@ public class ElasticsearchTests {
 
     //带高亮的查询
     @Test
-    public void highlightQuery() throws Exception{
+    public void highlightQuery() throws Exception {
         SearchRequest searchRequest = new SearchRequest("discusspost");//discusspost是索引名，就是表名
 
         //高亮
@@ -175,6 +184,48 @@ public class ElasticsearchTests {
             System.out.println(discussPost);
             list.add(discussPost);
         }
+    }
+
+    ///////////////////////////////////////////
+
+    @Test
+    public void testExistsIndex() throws Exception {
+        System.out.println(existsIndex(esIndices));
+    }
+
+    @Test
+    public void testCreateIndex() throws Exception {
+        //System.out.println(createIndex(esIndices));
+        //把所有帖子（List<DiscussPost>）存入es的discusspost索引（es的索引相当于数据库的表）
+        //按分数降序插入es，就是按热门程度来排。搜索出来的顺序也是按热门程度来排。
+        discussRepository.saveAll(discussMapper.selectAllDiscussPosts());
+    }
+
+    @Test
+    public void testDeleteIndex() throws Exception {
+        discussRepository.deleteAll();//删除所有数据
+        System.out.println(deleteIndex(esIndices));
+    }
+
+    //判断索引是否存在
+    public boolean existsIndex(String index) throws IOException {
+        GetIndexRequest request = new GetIndexRequest(index);
+        boolean exists = restHighLevelClient.indices().exists(request, RequestOptions.DEFAULT);
+        return exists;
+    }
+
+    //创建索引
+    public boolean createIndex(String index) throws IOException {
+        CreateIndexRequest request = new CreateIndexRequest(index);
+        CreateIndexResponse createIndexResponse = restHighLevelClient.indices().create(request, RequestOptions.DEFAULT);
+        return createIndexResponse.isAcknowledged();
+    }
+
+    //删除索引
+    public boolean deleteIndex(String index) throws IOException {
+        DeleteIndexRequest deleteIndexRequest = new DeleteIndexRequest(index);
+        AcknowledgedResponse response = restHighLevelClient.indices().delete(deleteIndexRequest, RequestOptions.DEFAULT);
+        return response.isAcknowledged();
     }
 
 }

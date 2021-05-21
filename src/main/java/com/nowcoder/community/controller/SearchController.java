@@ -31,7 +31,7 @@ public class SearchController implements CommunityConstant {
     private LikeService likeService;
 
     // search?keyword=xxx
-    @RequestMapping(path = "/search", method = RequestMethod.GET)//get请求的参数不能用请求体来穿，只能用search?keyword=xxx或者search/xxx这两种方式来穿参
+    @RequestMapping(path = "/search", method = RequestMethod.GET)
     public String search(String keyword, Page page, Model model) throws IOException {
         // 搜索帖子
         List<DiscussPost> searchResult =

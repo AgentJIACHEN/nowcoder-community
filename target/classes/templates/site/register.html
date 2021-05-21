@@ -71,6 +71,7 @@
 								   th:class="|form-control ${usernameMsg!=null?'is-invalid':''}|"
 								   th:value="${user!=null?user.username:''}"
 								   id="username" name="username" placeholder="请输入您的账号!" required>
+							<!--"${usernameMsg}"首次访问是空的没有问题，因为没有下级调用，不会产生空指针异常的问题-->
 							<div class="invalid-feedback" th:text="${usernameMsg}">
 								该账号已存在!
 							</div>
@@ -94,6 +95,7 @@
 							<input type="password" class="form-control"
 								   th:value="${user!=null?user.password:''}"
 								   id="confirm-password" placeholder="请再次输入密码!" required>
+							<!--确认密码和密码是否一致由前端判断。确认密码和密码一致，才会提交给后台。-->
 							<div class="invalid-feedback">
 								两次输入的密码不一致!
 							</div>

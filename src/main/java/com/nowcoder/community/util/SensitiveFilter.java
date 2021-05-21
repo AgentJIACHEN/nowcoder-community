@@ -99,6 +99,7 @@ public class SensitiveFilter {
                 continue;
             }
 
+            //abce和bc都是敏感词，句子是abcd，会检查出敏感词bc
             // 检查下级节点
             tempNode = tempNode.getSubNode(c);
             if (tempNode == null) {
@@ -159,7 +160,6 @@ public class SensitiveFilter {
         public TrieNode getSubNode(Character c) {
             return subNodes.get(c);
         }
-
     }
 
 }

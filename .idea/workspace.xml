@@ -5,13 +5,138 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1933749-789a-4c52-9692-58007d606c57" name="Default Changelist" comment="发布帖子">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/actuator/DatabaseEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/actuator/DatabaseEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/annotation/LoginRequired.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/annotation/LoginRequired.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/aspect/AlphaAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/aspect/AlphaAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/aspect/ServiceLogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/aspect/ServiceLogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/config/AlphaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/config/AlphaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/config/KaptchaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/config/KaptchaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/config/QuartzConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/config/QuartzConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/config/ThreadPoolConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/config/ThreadPoolConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/config/WkConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/config/WkConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/AlphaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/AlphaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/DataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/DataController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/DiscussPostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/DiscussPostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/FollowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/FollowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/LikeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/LikeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/ShareController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/ShareController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/advice/ExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/advice/ExceptionAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/interceptor/AlphaInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/interceptor/AlphaInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/interceptor/DataInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/interceptor/DataInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/interceptor/LoginRequiredInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/interceptor/LoginRequiredInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/interceptor/LoginTicketInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/interceptor/LoginTicketInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/interceptor/MessageInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/controller/interceptor/MessageInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/dao/AlphaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/dao/AlphaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/dao/AlphaDaoHibernateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/dao/AlphaDaoHibernateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/dao/AlphaDaoMyBatisImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/dao/AlphaDaoMyBatisImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/dao/CommentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/dao/CommentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/dao/DiscussPostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/dao/DiscussPostMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/dao/LoginTicketMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/dao/LoginTicketMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/dao/MessageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/dao/MessageMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/dao/elasticsearch/DiscussPostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/dao/elasticsearch/DiscussPostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/entity/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/entity/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/entity/DiscussPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/entity/DiscussPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/entity/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/entity/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/entity/LoginTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/entity/LoginTicket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/entity/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/entity/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/entity/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/entity/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/event/EventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/event/EventConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/event/EventProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/event/EventProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/quartz/AlphaJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/quartz/AlphaJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/quartz/PostScoreRefreshJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/quartz/PostScoreRefreshJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/service/AlphaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/service/AlphaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/service/DataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/service/DataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/service/DiscussPostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/service/DiscussPostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/service/ElasticsearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/service/ElasticsearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/service/FollowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/service/FollowService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/service/LikeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/service/LikeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/service/MessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/util/CommunityConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/util/CommunityConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/util/CommunityUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/util/CommunityUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/util/CookieUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/util/CookieUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/util/HostHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/util/HostHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/util/MailClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/util/MailClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/util/RedisKeyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/util/RedisKeyUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/util/SensitiveFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/community/util/SensitiveFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/comment-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/comment-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/discusspost-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/discusspost-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/message-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/message-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/user-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/user-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sensitive-words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sensitive-words.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/discuss-detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/discuss-detail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/letter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/letter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/html/ajax-demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/html/ajax-demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/html/student.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/html/student.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/discuss.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/discuss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/letter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/letter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/setting.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/setting.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/demo/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/demo/view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error/500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mail/activation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mail/activation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mail/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mail/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mail/forget.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mail/forget.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/site/admin/data.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/site/admin/data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/site/discuss-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/site/discuss-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/site/followee.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/site/followee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/site/follower.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/site/follower.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/site/forget.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/site/forget.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/site/letter-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/site/letter-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/site/letter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/site/letter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/site/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/site/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/site/my-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/site/my-post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/site/my-reply.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/site/my-reply.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/site/notice-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/site/notice-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/site/notice.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/site/notice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/site/operate-result.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/site/operate-result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/site/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/site/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/site/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/site/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/site/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/site/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/site/setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/site/setting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/BlockingQueueTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/BlockingQueueTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/CaffeineTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/CaffeineTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/CommunityApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/CommunityApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/ElasticsearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/ElasticsearchTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/KafkaTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/KafkaTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/LoggerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/LoggerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/MailTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/MailTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/MapperTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/MapperTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/QuartzTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/QuartzTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/RedisTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/RedisTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/SensitiveTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/SensitiveTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/SpringBootTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/SpringBootTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/ThreadPoolTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/ThreadPoolTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/TransactionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/TransactionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/WkTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nowcoder/community/WkTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,30 +163,31 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$USER_HOME$/.m2/wrapper/dists/apache-maven-3.6.0-bin/2dakv70gp803gtm5ve1ufmvttn/apache-maven-3.6.0" />
-        <option name="userSettingsFile" value="D:\apache-maven-3.6.3\conf\settings.xml" />
+        <option name="mavenHome" value="C:\Users\dell\.m2\wrapper\dists\apache-maven-3.6.0-bin\2dakv70gp803gtm5ve1ufmvttn\apache-maven-3.6.0" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1r7TO9qr9tNV0k9XtZMftzVue2r" />
+  <component name="ProjectId" id="1rl1oYgSrAb7PGpTCpGmVdTmdLp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/.m2/repository/org/elasticsearch/elasticsearch/7.12.0/elasticsearch-7.12.0.jar" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../大三下/课设5/黄佳彤的/thymeleaf下能显示的前端/community2改/community-改2" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.24451756" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReactorSettings">
@@ -71,31 +197,15 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\work\workspace\community\src\main\resources\templates" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.nowcoder.community.config" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desktop\第八章素材和源码\community-0803\community\src\main\java\com\nowcoder\community\quartz" />
+      <recent name="D:\Desktop\第八章素材和源码\community-0803\community\src\main\resources\static\js" />
+      <recent name="D:\work\workspace\community\src\main\resources" />
       <recent name="D:\work\workspace\community\src\test\java\com\nowcoder\community" />
       <recent name="D:\work\workspace\community\src\main\java\com\nowcoder\community\config" />
-      <recent name="D:\work\workspace\community\src\main\resources\mapper" />
-      <recent name="D:\work\workspace\community\src\main\resources" />
-      <recent name="D:\work\workspace\community\src\main\resources\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ElasticsearchTests.testInsertList">
-    <configuration name="CommunityApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nowcoder.community.CommunityApplication" />
-      <module name="community" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nowcoder.community.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.CommunityApplication">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -107,7 +217,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ElasticsearchTests.highlightQuery" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ElasticsearchTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="community" />
       <extension name="coverage">
         <pattern>
@@ -117,7 +227,55 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.nowcoder.community" />
       <option name="MAIN_CLASS_NAME" value="com.nowcoder.community.ElasticsearchTests" />
-      <option name="METHOD_NAME" value="highlightQuery" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElasticsearchTests.testCreateIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="community" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nowcoder.community.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nowcoder.community" />
+      <option name="MAIN_CLASS_NAME" value="com.nowcoder.community.ElasticsearchTests" />
+      <option name="METHOD_NAME" value="testCreateIndex" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElasticsearchTests.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="community" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nowcoder.community.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nowcoder.community" />
+      <option name="MAIN_CLASS_NAME" value="com.nowcoder.community.ElasticsearchTests" />
+      <option name="METHOD_NAME" value="testDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElasticsearchTests.testDeleteIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="community" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nowcoder.community.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nowcoder.community" />
+      <option name="MAIN_CLASS_NAME" value="com.nowcoder.community.ElasticsearchTests" />
+      <option name="METHOD_NAME" value="testDeleteIndex" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,38 +297,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ElasticsearchTests.testInsertList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="community" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nowcoder.community.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.nowcoder.community" />
-      <option name="MAIN_CLASS_NAME" value="com.nowcoder.community.ElasticsearchTests" />
-      <option name="METHOD_NAME" value="testInsertList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ElasticsearchTests.testSearchByTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="community" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nowcoder.community.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.nowcoder.community" />
-      <option name="MAIN_CLASS_NAME" value="com.nowcoder.community.ElasticsearchTests" />
-      <option name="METHOD_NAME" value="testSearchByTemplate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CommunityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="community" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.nowcoder.community.CommunityApplication" />
@@ -180,11 +306,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ElasticsearchTests.testInsertList" />
-        <item itemvalue="JUnit.ElasticsearchTests.highlightQuery" />
         <item itemvalue="JUnit.ElasticsearchTests.testInsert" />
-        <item itemvalue="Application.CommunityApplication" />
-        <item itemvalue="JUnit.ElasticsearchTests.testSearchByTemplate" />
+        <item itemvalue="JUnit.ElasticsearchTests.testDeleteIndex" />
+        <item itemvalue="JUnit.ElasticsearchTests.testDelete" />
+        <item itemvalue="JUnit.ElasticsearchTests.testCreateIndex" />
+        <item itemvalue="JUnit.ElasticsearchTests.test" />
       </list>
     </recent_temporary>
   </component>
@@ -199,14 +325,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559051647920</updated>
-      <workItem from="1618326095566" duration="3108000" />
-      <workItem from="1618359530421" duration="25695000" />
-      <workItem from="1618445674187" duration="8219000" />
-      <workItem from="1618722487668" duration="1396000" />
-      <workItem from="1618791924094" duration="587000" />
-      <workItem from="1618877865835" duration="775000" />
-      <workItem from="1618964450302" duration="1797000" />
-      <workItem from="1619055026664" duration="17982000" />
+      <workItem from="1619536039313" duration="2620000" />
+      <workItem from="1619570826271" duration="8530000" />
+      <workItem from="1619659568501" duration="625000" />
+      <workItem from="1619854878395" duration="591000" />
+      <workItem from="1620114179967" duration="1309000" />
+      <workItem from="1620127655486" duration="2710000" />
+      <workItem from="1620190436887" duration="14438000" />
+      <workItem from="1620209913311" duration="10956000" />
+      <workItem from="1620263854360" duration="35974000" />
+      <workItem from="1620376797777" duration="17516000" />
+      <workItem from="1620453892703" duration="22312000" />
+      <workItem from="1620530221501" duration="32724000" />
+      <workItem from="1620609890295" duration="37156000" />
+      <workItem from="1620692938943" duration="34221000" />
+      <workItem from="1620784522704" duration="15216000" />
+      <workItem from="1620865352088" duration="34390000" />
+      <workItem from="1620969066686" duration="35051000" />
+      <workItem from="1621074986382" duration="9207000" />
+      <workItem from="1621141306843" duration="15470000" />
+      <workItem from="1621211958522" duration="8632000" />
+      <workItem from="1621298307621" duration="19188000" />
+      <workItem from="1621394400341" duration="1201000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <created>1559662433377</created>
@@ -446,7 +586,91 @@
       <option name="project" value="LOCAL" />
       <updated>1563544431423</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="搜索">
+      <created>1563583425325</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1563583425325</updated>
+    </task>
+    <task id="LOCAL-00036" summary="BUG">
+      <created>1563798125997</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1563798125997</updated>
+    </task>
+    <task id="LOCAL-00037" summary="权限控制">
+      <created>1563888600998</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1563888600998</updated>
+    </task>
+    <task id="LOCAL-00038" summary="置顶,加精,删除">
+      <created>1563971931563</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1563971931563</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Redis">
+      <created>1564057059716</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1564057059716</updated>
+    </task>
+    <task id="LOCAL-00040" summary="统计">
+      <created>1564144687401</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1564144687401</updated>
+    </task>
+    <task id="LOCAL-00041" summary="热帖排行">
+      <created>1564403874116</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1564403874116</updated>
+    </task>
+    <task id="LOCAL-00042" summary="生成长图">
+      <created>1564490858633</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1564490858633</updated>
+    </task>
+    <task id="LOCAL-00043" summary="云服务">
+      <created>1564579161148</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1564579161148</updated>
+    </task>
+    <task id="LOCAL-00044" summary="caffeine">
+      <created>1564663423146</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1564663423146</updated>
+    </task>
+    <task id="LOCAL-00045" summary="单元测试">
+      <created>1564665926332</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1564665926332</updated>
+    </task>
+    <task id="LOCAL-00046" summary="actuator">
+      <created>1564668474604</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1564668474604</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -456,18 +680,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="拦截器" />
-    <MESSAGE value="账号设置" />
-    <MESSAGE value="检查登录状态" />
-    <MESSAGE value="过滤敏感词" />
-    <MESSAGE value="帖子详情" />
-    <MESSAGE value="事务管理" />
-    <MESSAGE value="显示评论" />
-    <MESSAGE value="添加评论" />
-    <MESSAGE value="私信列表" />
-    <MESSAGE value="发送私信" />
-    <MESSAGE value="统一处理异常" />
-    <MESSAGE value="aop" />
     <MESSAGE value="Redis示例" />
     <MESSAGE value="点赞" />
     <MESSAGE value="发布帖子" />
@@ -481,73 +693,104 @@
     <MESSAGE value="发送通知" />
     <MESSAGE value="显示通知" />
     <MESSAGE value="Elasticsearch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Elasticsearch" />
+    <MESSAGE value="搜索" />
+    <MESSAGE value="BUG" />
+    <MESSAGE value="权限控制" />
+    <MESSAGE value="置顶,加精,删除" />
+    <MESSAGE value="Redis" />
+    <MESSAGE value="统计" />
+    <MESSAGE value="热帖排行" />
+    <MESSAGE value="生成长图" />
+    <MESSAGE value="云服务" />
+    <MESSAGE value="caffeine" />
+    <MESSAGE value="单元测试" />
+    <MESSAGE value="actuator" />
+    <option name="LAST_COMMIT_MESSAGE" value="actuator" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="464" y="194" key="#Notifications" timestamp="1619072364840">
+    <state x="391" y="75" key="#Inspections" timestamp="1621301864136">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="464" y="194" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1619072364840" />
-    <state x="433" y="99" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619079769318">
+    <state x="391" y="75" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1621301864136" />
+    <state x="496" y="108" width="577" height="640" key="FileChooserDialogImpl" timestamp="1621395295938">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="433" y="99" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1619079769318" />
-    <state x="342" y="114" key="FileChooserDialogImpl" timestamp="1619070541038">
+    <state x="496" y="108" width="577" height="640" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1621395295938" />
+    <state width="1483" height="459" key="GridCell.Tab.0.bottom" timestamp="1621395327300">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="342" y="114" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1619070541038" />
-    <state width="1483" height="375" key="GridCell.Tab.0.bottom" timestamp="1619078851901">
+    <state width="1483" height="459" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621395327300" />
+    <state width="1483" height="459" key="GridCell.Tab.0.center" timestamp="1621395327299">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="375" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619078851901" />
-    <state width="1483" height="375" key="GridCell.Tab.0.center" timestamp="1619078851900">
+    <state width="1483" height="459" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621395327299" />
+    <state width="1483" height="459" key="GridCell.Tab.0.left" timestamp="1621395327299">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="375" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1619078851900" />
-    <state width="1483" height="375" key="GridCell.Tab.0.left" timestamp="1619078851900">
+    <state width="1483" height="459" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621395327299" />
+    <state width="1483" height="459" key="GridCell.Tab.0.right" timestamp="1621395327300">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="375" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1619078851900" />
-    <state width="1483" height="375" key="GridCell.Tab.0.right" timestamp="1619078851900">
+    <state width="1483" height="459" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621395327300" />
+    <state width="1483" height="459" key="GridCell.Tab.1.bottom" timestamp="1621354400402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="375" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1619078851900" />
-    <state width="1483" height="3" key="GridCell.Tab.1.bottom" timestamp="1619078473180">
+    <state width="1483" height="459" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621354400402" />
+    <state width="1483" height="459" key="GridCell.Tab.1.center" timestamp="1621354400402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="3" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619078473180" />
-    <state width="1483" height="3" key="GridCell.Tab.1.center" timestamp="1619078473180">
+    <state width="1483" height="459" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1621354400402" />
+    <state width="1483" height="459" key="GridCell.Tab.1.left" timestamp="1621354400402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="3" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1619078473180" />
-    <state width="1483" height="3" key="GridCell.Tab.1.left" timestamp="1619078473180">
+    <state width="1483" height="459" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1621354400402" />
+    <state width="1483" height="459" key="GridCell.Tab.1.right" timestamp="1621354400402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="3" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1619078473180" />
-    <state width="1483" height="3" key="GridCell.Tab.1.right" timestamp="1619078473180">
+    <state width="1483" height="459" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1621354400402" />
+    <state width="1483" height="459" key="GridCell.Tab.2.bottom" timestamp="1621354400403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="3" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1619078473180" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1619070665257">
+    <state width="1483" height="459" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621354400403" />
+    <state width="1483" height="459" key="GridCell.Tab.2.center" timestamp="1621354400402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1619070665257" />
-    <state x="398" y="87" width="740" height="650" key="find.popup" timestamp="1618378846590">
+    <state width="1483" height="459" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1621354400402" />
+    <state width="1483" height="459" key="GridCell.Tab.2.left" timestamp="1621354400402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="398" y="87" width="740" height="650" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1618378846590" />
-    <state x="347" y="0" width="840" height="1034" key="search.everywhere.popup" timestamp="1618379262065">
+    <state width="1483" height="459" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1621354400402" />
+    <state width="1483" height="459" key="GridCell.Tab.2.right" timestamp="1621354400403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="347" y="0" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1618379262065" />
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="breakpointCondition">
-      <expression>
-        <expression-string>attributes==null</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
+    <state width="1483" height="459" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1621354400403" />
+    <state x="246" y="93" key="IDE.errors.dialog" timestamp="1620723839512">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="246" y="93" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1620723839512" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1621155853874">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1621155853874" />
+    <state x="212" y="66" width="1112" height="758" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1620918378477">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="212" y="66" width="1112" height="758" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1620918378477" />
+    <state x="111" y="0" width="1394" height="642" key="dock-window-1" timestamp="1620614607259">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="111" y="0" width="1394" height="642" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1620614607259" />
+    <state x="590" y="48" width="740" height="680" key="find.popup" timestamp="1621342917555">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="590" y="48" width="740" height="680" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1621342917555" />
+    <state x="356" y="35" width="824" height="789" key="new project wizard" timestamp="1621075756283">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="356" y="35" width="824" height="789" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1621075756283" />
+    <state x="347" y="0" width="840" height="1034" key="search.everywhere.popup" timestamp="1621353642125">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="347" y="0" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1621353642125" />
   </component>
 </project>
